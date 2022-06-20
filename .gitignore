@@ -1,8 +1,18 @@
+
+# macOS
+.DS_Store
+
+# Idea
 *.iml
 .idea
+
+# Eclipse
 .classpath
 .project
 .settings/
+
+# Build
 bin/
 target/
 failed-gui-tests/
+
