@@ -31,7 +31,7 @@
         <dependency>
             <groupId>org.simplericity.macify</groupId>
             <artifactId>macify</artifactId>
-            <version>1.4</version>
+            <version>1.6</version>
         </dependency>
         <dependency>
             <groupId>org.easytesting</groupId>
