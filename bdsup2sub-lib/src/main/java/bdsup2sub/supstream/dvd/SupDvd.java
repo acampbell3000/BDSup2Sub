@@ -32,7 +32,8 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 
-import static bdsup2sub.utils.ByteUtils.*;
+import static bdsup2sub.utils.ByteUtils.getByte;
+import static bdsup2sub.utils.ByteUtils.getWord;
 import static bdsup2sub.utils.ToolBox.toHexLeftZeroPadded;
 
 /**

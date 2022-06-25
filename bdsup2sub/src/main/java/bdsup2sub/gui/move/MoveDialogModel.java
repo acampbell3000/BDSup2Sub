@@ -18,7 +18,6 @@ package bdsup2sub.gui.move;
 import bdsup2sub.core.CaptionMoveModeX;
 import bdsup2sub.core.CaptionMoveModeY;
 import bdsup2sub.core.Configuration;
-import bdsup2sub.core.Core;
 import bdsup2sub.supstream.SubPicture;
 
 import java.awt.image.BufferedImage;

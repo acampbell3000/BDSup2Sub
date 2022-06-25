@@ -29,10 +29,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.util.ArrayList;
 
 import static bdsup2sub.core.Configuration.*;
-import static bdsup2sub.gui.support.EditPane.*;
+import static bdsup2sub.gui.support.EditPane.SelectListener;
 import static bdsup2sub.utils.TimeUtils.ptsToTimeStr;
 import static bdsup2sub.utils.TimeUtils.timeStrToPTS;
 

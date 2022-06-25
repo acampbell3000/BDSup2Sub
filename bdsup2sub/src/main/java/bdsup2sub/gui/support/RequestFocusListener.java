@@ -16,7 +16,8 @@
 package bdsup2sub.gui.support;
 
 import javax.swing.*;
-import javax.swing.event.*;
+import javax.swing.event.AncestorEvent;
+import javax.swing.event.AncestorListener;
 
 /**
  *  Convenience class to request focus on a component.

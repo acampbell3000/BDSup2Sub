@@ -22,7 +22,7 @@ import bdsup2sub.utils.SubtitleUtils;
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
-import java.util.*;
+import java.util.ArrayList;
 import java.util.List;
 
 

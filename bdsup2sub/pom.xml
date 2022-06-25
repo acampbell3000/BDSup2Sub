@@ -79,6 +79,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <artifactId>jdeb</artifactId>
                 <groupId>org.vafer</groupId>
@@ -140,6 +141,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>osxappbundle-maven-plugin</artifactId>
@@ -162,5 +164,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

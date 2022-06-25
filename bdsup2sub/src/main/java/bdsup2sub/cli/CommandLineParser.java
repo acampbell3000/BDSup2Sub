@@ -17,9 +17,9 @@ package bdsup2sub.cli;
 
 import bdsup2sub.core.*;
 import bdsup2sub.utils.FilenameUtils;
-import bdsup2sub.utils.optional.Optional;
 import bdsup2sub.utils.SubtitleUtils;
 import bdsup2sub.utils.ToolBox;
+import bdsup2sub.utils.optional.Optional;
 import org.apache.commons.cli.*;
 
 import java.io.File;

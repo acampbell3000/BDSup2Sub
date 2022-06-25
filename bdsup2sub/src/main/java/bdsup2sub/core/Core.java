@@ -15,24 +15,6 @@
  */
 package bdsup2sub.core;
 
-import static bdsup2sub.core.Constants.*;
-import static bdsup2sub.utils.SubtitleUtils.*;
-import static bdsup2sub.utils.TimeUtils.*;
-import static com.mortennobel.imagescaling.ResampleFilters.*;
-import java.awt.image.BufferedImage;
-import java.io.BufferedOutputStream;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.SortedMap;
-import java.util.TreeMap;
-import javax.swing.*;
-import bdsup2sub.BDSup2SubManager;
 import bdsup2sub.bitmap.Bitmap;
 import bdsup2sub.bitmap.BitmapWithPalette;
 import bdsup2sub.bitmap.ErasePatch;
@@ -43,20 +25,27 @@ import bdsup2sub.supstream.SubtitleStream;
 import bdsup2sub.supstream.bd.SupBD;
 import bdsup2sub.supstream.bd.SupBDWriter;
 import bdsup2sub.supstream.bdnxml.SupXml;
-import bdsup2sub.supstream.dvd.DvdSubtitleStream;
-import bdsup2sub.supstream.dvd.IfoWriter;
-import bdsup2sub.supstream.dvd.SubDvd;
-import bdsup2sub.supstream.dvd.SubDvdWriter;
-import bdsup2sub.supstream.dvd.SubPictureDVD;
-import bdsup2sub.supstream.dvd.SupDvd;
-import bdsup2sub.supstream.dvd.SupDvdUtil;
-import bdsup2sub.supstream.dvd.SupDvdWriter;
+import bdsup2sub.supstream.dvd.*;
 import bdsup2sub.supstream.hd.SupHD;
 import bdsup2sub.tools.EnhancedPngEncoder;
 import bdsup2sub.utils.FilenameUtils;
 import bdsup2sub.utils.SubtitleUtils;
 import bdsup2sub.utils.ToolBox;
 import com.mortennobel.imagescaling.ResampleFilter;
+
+import javax.swing.*;
+import java.awt.image.BufferedImage;
+import java.io.*;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+import static bdsup2sub.core.Constants.*;
+import static bdsup2sub.utils.SubtitleUtils.getResolutionForDimension;
+import static bdsup2sub.utils.TimeUtils.ptsToTimeStr;
+import static com.mortennobel.imagescaling.ResampleFilters.*;
 
 /**
  * This class contains the core functionality of BDSup2Sub.<br>

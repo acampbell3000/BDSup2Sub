@@ -22,8 +22,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Arrays;
-import java.util.Collections;
 
 import static bdsup2sub.gui.palette.FramePaletteDialogModel.COLOR_NAME;
 

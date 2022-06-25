@@ -18,11 +18,9 @@ package bdsup2sub.gui.palette;
 import bdsup2sub.bitmap.Palette;
 import bdsup2sub.core.Core;
 import bdsup2sub.gui.support.RequestFocusListener;
-import bdsup2sub.utils.ToolBox;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 

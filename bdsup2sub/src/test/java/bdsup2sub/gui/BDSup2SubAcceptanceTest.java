@@ -20,6 +20,7 @@ import org.junit.runner.RunWith;
 import java.io.File;
 
 import static org.fest.swing.launcher.ApplicationLauncher.application;
+import static org.junit.Assume.assumeTrue;
 
 @RunWith(GUITestRunner.class)
 public abstract class BDSup2SubAcceptanceTest {
@@ -28,6 +29,8 @@ public abstract class BDSup2SubAcceptanceTest {
 
     @BeforeClass
     public static void setUpOnce() throws Exception {
+        assumeTrue(!"Mac OS X".equalsIgnoreCase(System.getProperty("os.name")));
+
         FailOnThreadViolationRepaintManager.install();
         deleteConfigFile();
     }

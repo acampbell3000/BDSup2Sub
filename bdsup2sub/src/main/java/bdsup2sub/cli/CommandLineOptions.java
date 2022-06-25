@@ -15,7 +15,10 @@
  */
 package bdsup2sub.cli;
 
-import org.apache.commons.cli.*;
+import org.apache.commons.cli.Option;
+import org.apache.commons.cli.OptionBuilder;
+import org.apache.commons.cli.OptionGroup;
+import org.apache.commons.cli.Options;
 
 import java.util.Arrays;
 import java.util.List;

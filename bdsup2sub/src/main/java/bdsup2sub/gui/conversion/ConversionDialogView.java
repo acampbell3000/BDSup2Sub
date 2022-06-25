@@ -15,24 +15,18 @@
  */
 package bdsup2sub.gui.conversion;
 
-import bdsup2sub.core.Core;
 import bdsup2sub.core.ForcedFlagState;
 import bdsup2sub.core.Resolution;
 import bdsup2sub.gui.support.RequestFocusListener;
-import bdsup2sub.utils.SubtitleUtils;
 import bdsup2sub.utils.ToolBox;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
-import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
-import javax.swing.plaf.basic.BasicComboBoxEditor;
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.ActionListener;
+import java.awt.event.ItemListener;
 
-import static bdsup2sub.core.Configuration.*;
-import static bdsup2sub.core.Configuration.MAX_FREE_SCALE_FACTOR;
-import static bdsup2sub.core.Configuration.MIN_FREE_SCALE_FACTOR;
 import static bdsup2sub.gui.support.GuiUtils.centerRelativeToOwner;
 
 class ConversionDialogView extends JDialog {

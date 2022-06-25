@@ -26,8 +26,6 @@ import java.awt.*;
 import java.awt.event.*;
 
 import static bdsup2sub.core.Configuration.*;
-import static bdsup2sub.core.Configuration.MAX_FREE_SCALE_FACTOR;
-import static bdsup2sub.core.Configuration.MIN_FREE_SCALE_FACTOR;
 
 class ConversionDialogController {
 

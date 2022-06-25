@@ -11,9 +11,7 @@ import bdsup2sub.tools.QuantizeFilter;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import static bdsup2sub.utils.ByteUtils.setByte;
-import static bdsup2sub.utils.ByteUtils.setDWord;
-import static bdsup2sub.utils.ByteUtils.setWord;
+import static bdsup2sub.utils.ByteUtils.*;
 
 public final class SupBDWriter {
 

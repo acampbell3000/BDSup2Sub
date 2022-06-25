@@ -21,7 +21,8 @@ import bdsup2sub.gui.support.RequestFocusListener;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.ActionListener;
+import java.awt.event.ItemListener;
 
 import static bdsup2sub.core.Constants.LANGUAGES;
 import static bdsup2sub.gui.support.GuiUtils.centerRelativeToOwner;

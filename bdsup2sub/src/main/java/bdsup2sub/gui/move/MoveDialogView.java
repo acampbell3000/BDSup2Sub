@@ -15,22 +15,19 @@
  */
 package bdsup2sub.gui.move;
 
-import bdsup2sub.core.*;
+import bdsup2sub.core.Logger;
 import bdsup2sub.gui.support.EditPane;
 import bdsup2sub.gui.support.RequestFocusListener;
-import bdsup2sub.supstream.SubPicture;
 import bdsup2sub.utils.ToolBox;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
-import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 
-import static bdsup2sub.core.Configuration.ERROR_BACKGROUND;
-import static bdsup2sub.core.Configuration.OK_BACKGROUND;
 import static bdsup2sub.gui.support.GuiUtils.centerRelativeToOwner;
 
 class MoveDialogView extends JDialog {

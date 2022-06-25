@@ -19,7 +19,9 @@ import bdsup2sub.BDSup2SubManager;
 import bdsup2sub.bitmap.Bitmap;
 import bdsup2sub.bitmap.BitmapBounds;
 import bdsup2sub.bitmap.Palette;
-import bdsup2sub.core.*;
+import bdsup2sub.core.Configuration;
+import bdsup2sub.core.CoreException;
+import bdsup2sub.core.LibLogger;
 import bdsup2sub.supstream.ImageObjectFragment;
 import bdsup2sub.supstream.SubPicture;
 import bdsup2sub.tools.FileBuffer;
@@ -27,11 +29,14 @@ import bdsup2sub.tools.FileBufferException;
 import bdsup2sub.utils.ToolBox;
 
 import java.awt.image.BufferedImage;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static bdsup2sub.core.Constants.*;
+import static bdsup2sub.core.Constants.DEFAULT_DVD_PALETTE;
+import static bdsup2sub.core.Constants.LANGUAGES;
 import static bdsup2sub.utils.ByteUtils.getByte;
 import static bdsup2sub.utils.ByteUtils.getWord;
 import static bdsup2sub.utils.TimeUtils.timeStrToPTS;

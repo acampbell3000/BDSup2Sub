@@ -18,10 +18,10 @@ package bdsup2sub.gui.main;
 import bdsup2sub.bitmap.Palette;
 import bdsup2sub.core.*;
 import bdsup2sub.gui.conversion.ConversionDialog;
-import bdsup2sub.gui.move.MoveDialog;
-import bdsup2sub.gui.palette.DvdPaletteDialog;
 import bdsup2sub.gui.edit.EditDialog;
 import bdsup2sub.gui.export.ExportDialog;
+import bdsup2sub.gui.move.MoveDialog;
+import bdsup2sub.gui.palette.DvdPaletteDialog;
 import bdsup2sub.gui.palette.FramePaletteDialog;
 import bdsup2sub.utils.FilenameUtils;
 import bdsup2sub.utils.StreamUtils;
@@ -33,7 +33,10 @@ import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import java.awt.*;
-import java.awt.datatransfer.*;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.StringSelection;
+import java.awt.datatransfer.Transferable;
+import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.*;
 import java.io.File;
 import java.io.IOException;
@@ -41,7 +44,8 @@ import java.net.URI;
 import java.util.Arrays;
 import java.util.List;
 
-import static bdsup2sub.core.Configuration.*;
+import static bdsup2sub.core.Configuration.ERROR_BACKGROUND;
+import static bdsup2sub.core.Configuration.OK_BACKGROUND;
 import static bdsup2sub.core.Constants.DEFAULT_DVD_PALETTE;
 
 class MainFrameController {

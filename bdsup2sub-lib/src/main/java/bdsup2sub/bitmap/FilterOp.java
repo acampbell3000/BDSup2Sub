@@ -16,10 +16,7 @@
  */
 package bdsup2sub.bitmap;
 
-import bdsup2sub.bitmap.Bitmap;
-import bdsup2sub.bitmap.Palette;
 import com.mortennobel.imagescaling.ResampleFilter;
-import com.mortennobel.imagescaling.ResampleFilters;
 
 /**
  * Subsampling scaling algorithm with various filters.

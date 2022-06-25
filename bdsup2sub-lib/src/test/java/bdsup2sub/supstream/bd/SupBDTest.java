@@ -6,7 +6,6 @@ import bdsup2sub.core.CoreException;
 import bdsup2sub.supstream.ImageObject;
 import bdsup2sub.supstream.ImageObjectFragment;
 import bdsup2sub.supstream.PaletteInfo;
-
 import org.junit.Before;
 import org.junit.Test;
 
